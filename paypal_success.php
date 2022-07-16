@@ -4,6 +4,9 @@ define("DEBUG", 1);
 define("USE_SANDBOX",1);
 define("LOG_FILE", "paypal_ipn.log");
 
+
+error_reporting(1);
+
 $rawInputData = file_get_contents('php://input');
 $rawInputDataArr = explode("&", $rawInputData);
 $inputDataArr = array();
