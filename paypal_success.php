@@ -114,13 +114,13 @@ if (strcmp ($res, "VERIFIED") == 0) {
 	
 	
 	if(DEBUG == true) {
-		error_log(date('[Y-m-d H:i e] '). "Verified IPN: $req ". PHP_EOL, 3, LOG_FILE);
+		error_log(date('[Y-m-d H:i e] '). "Verified IPN: $reqData ". PHP_EOL, 3, LOG_FILE);
 	}
 	
 } else if (strcmp ($res, "INVALID") == 0) {
 	// log for manual investigation
 	// Add business logic here which deals with invalid IPN messages
 	if(DEBUG == true) {
-		error_log(date('[Y-m-d H:i e] '). "Invalid IPN: $req" . PHP_EOL, 3, LOG_FILE);
+		error_log(date('[Y-m-d H:i e] '). "Invalid IPN: $reqData" . PHP_EOL, 3, LOG_FILE);
 	}
 }
