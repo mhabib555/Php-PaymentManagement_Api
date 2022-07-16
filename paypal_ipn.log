@@ -1,0 +1,59 @@
+[2022-07-16 12:21 Europe/Berlin] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: 
+[2022-07-16 12:21 Europe/Berlin] HTTP response of validation request: 
+[2022-07-16 12:21 Europe/Berlin] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-07-16 12:21 Europe/Berlin] HTTP response of validation request: 
+[2022-07-16 12:22 Europe/Berlin] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-07-16 12:22 Europe/Berlin] HTTP response of validation request: HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 419
+Server: Varnish
+Retry-After: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 16 Jul 2022 10:22:09 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-hnd18739-HND, cache-dxb1470020-DXB
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1657966929.981971,VS0,VE159
+Set-Cookie: x-cdn=fastly:DXB; Domain=paypal.com; Path=/; Secure
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paypal Error</title>
+</head>
+<body>
+<h1>Access Denied.</h1>
+<p>You don't have permission to access "/cgi-bin/webscr" on this server.
+<br/>
+<p>Reference #165796692931595bee8f589a5bfed5f
+<br/>
+<p> Timestamp: 1657966929
+</body>
+</html>
+

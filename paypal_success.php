@@ -68,10 +68,10 @@ if(curl_errno($curl) != 0) {
 } else {
 	// Log the entire HTTP response if debug is switched on.
 	if(DEBUG == true) {
-		error_log(date('[Y-m-d H:i e] '). "HTTP request of validation request:". curl_getinfo($ch, CURLINFO_HEADER_OUT) ." for IPN payload: $req" . PHP_EOL, 3, LOG_FILE);
-		error_log(date('[Y-m-d H:i e] '). "HTTP response of validation request: $res" . PHP_EOL, 3, LOG_FILE);
+		error_log(date('[Y-m-d H:i e] '). "HTTP request of validation request:". curl_getinfo($curl, CURLINFO_HEADER_OUT) ." for IPN payload: $reqData" . PHP_EOL, 3, LOG_FILE);
+		error_log(date('[Y-m-d H:i e] '). "HTTP response of validation request: $curlRes" . PHP_EOL, 3, LOG_FILE);
 	}
-	curl_close($ch);
+	curl_close($curl);
 }
 $tokens = explode("\r\n\r\n", trim($curlRes));
 $res = trim(end($tokens));
